@@ -267,7 +267,7 @@ display: flex;
 
 }
 
-
+.buttonBrands:nth-child(-n+6) {display: inline;}
 
 .buttonBrands {
   width: 224px;
@@ -396,6 +396,8 @@ display: flex;
 
 .titleRepair {padding: 0 32px 0 32px;}
 
+.buttonBrands:nth-child(-n+8) {display: inline;}
+
 .brands_button {width: 1055px; column-gap: 31px;}
 
 .buttonBrands {width: 240px;}
@@ -403,4 +405,7 @@ display: flex;
 .icon {width: 200px;}
 
 .brands .about_infoBlock_hidden {width: 1065px;}
+
+
+
 }
