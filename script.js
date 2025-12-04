@@ -3,18 +3,17 @@ var openPopupButton = document.querySelector('.button-open');
 var closePopupButton = document.querySelector('.button-close');
 
 openPopupButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
 
 for (var i = 0; i < popup.length; i++)  {
-  popup[i].classList.add('modal-show');
+  popup[i].classList.remove('modal');
   openPopupButton.classList.add('modal');
+  closePopupButton.classList.remove('modal');
 }});
-
-console.log(popup);
 
 closePopupButton.addEventListener('click', function () {
 
   for (var i = 0; i < popup.length; i++)  {
-  popup[i].classList.remove('modal-show');
+  popup[i].classList.add('modal');
+  closePopupButton.classList.add('modal');
   openPopupButton.classList.remove('modal');
 }});
