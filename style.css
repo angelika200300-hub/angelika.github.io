@@ -100,7 +100,7 @@ button:active {transform: scale(1.10);transition-duration: 0.5s;}
 .section {
   flex-grow: 1;
   overflow-x: scroll;
-  margin-left: 320px;
+  /*margin-left: 320px;*/
 }
 
 .navigateMenu {
@@ -197,7 +197,7 @@ display: flex;
 .about {
   display: flex;
 
-  padding: 30px 20px 0 20px;     
+  padding: 30px 20px 30px 20px;     
   font-size: 14px;
   color: #1B1C21;
   justify-content: space-between;
@@ -222,7 +222,7 @@ display: flex;
 .about_infoBlock_hidden {
   display: flex;
   align-items: center;
-  padding: 15px 0 0 0;
+  padding: 15px 0 0 10px;
   width: 132px;
   justify-content: space-between;
 }
@@ -239,6 +239,87 @@ display: flex;
   width: 35vw;
   border-radius: 10px;
 }
+
+
+
+.titleRepair {
+  height: 56px;
+  display: flex; 
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e7e82;
+  text-transform: uppercase;
+
+  padding: 0 20px 0 20px;
+  background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+
+.brands_button {
+ display: flex;
+ flex-wrap: wrap;
+ row-gap: 20px;
+ column-gap: 28px;
+ padding: 20px 0;
+ width: 729px;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+
+
+
+.buttonBrands {
+  width: 224px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.icon {
+  display: flex;
+  width: 185px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.iconBorder{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ff3e79;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  padding-top: 14px;
+}
+
+.brands .about_infoBlock_hidden {
+  width: 736px;
+  padding: 15px 0 0 27px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+.brands .buttonRead {
+  padding-left: 5px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-show {
+  display: inline;
+}
+
+
 
 .footer {height: 20px;}
 
@@ -289,6 +370,12 @@ display: flex;
 
 .header {display: none;}
 
+.about {padding: 30px 32px 30px 32px;}
+
+.services {padding: 30px 32px 0 0;}
+
+.services_title {width: 268px;}
+
 .services_buttons {display: flex;}
 
 .services_buttons .buttonImage {
@@ -300,11 +387,21 @@ display: flex;
   font-family: "TTLakes-Medium", "Arial", sans-serif;
 }
 
-.navigateMenu {height: 37px; overflow-y: hidden;}
+.navigateMenu {height: 37px; overflow-y: hidden; padding: 30px 0 0 32px;}
 
 .services_buttons p {padding-right: 10px;}
 
 .about_infoBlock_display p:nth-child(2n) {display: none;}
 
 .about_infoBlock_display p:nth-child(3n) {display: inline;}
+
+.titleRepair {padding: 0 32px 0 32px;}
+
+.brands_button {width: 1055px; column-gap: 31px;}
+
+.buttonBrands {width: 240px;}
+
+.icon {width: 200px;}
+
+.brands .about_infoBlock_hidden {width: 1065px;}
 }
