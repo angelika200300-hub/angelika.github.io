@@ -317,6 +317,7 @@ display: flex;
 
 .brands_button_mobile {display: none;}
 
+.slider-container {display: none;}
 
 .footer {height: 20px;}
 
@@ -366,19 +367,27 @@ display: flex;
 .about_infoBlock_hidden
  {display: none;}
 
- .slider-container{
-  display: inline;
-  flex-direction: column;
+.slider-container {display: inline;}
+
+.swiper-wrapper {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
+  padding: 20px 0 0 20px;
+  height: 100px;
+}
 
- }
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #dddddd;
+}
 
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+}
 
  
-}
 
 
 @media screen and (min-width: 1120px) {
@@ -424,4 +433,5 @@ display: flex;
 
 .brands_button_mobile {display: none;}
 
+.slider-container {display: none;}
 }
